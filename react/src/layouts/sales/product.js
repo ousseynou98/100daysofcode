@@ -30,6 +30,7 @@ import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
 import MDButton from "components/MDButton";
 import { Link } from "react-router-dom";
+import withAuth from "layouts/controlLog";
 
 
 // Data
@@ -103,4 +104,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default withAuth(Product);

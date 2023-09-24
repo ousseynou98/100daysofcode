@@ -19,6 +19,7 @@ import AddIcon from "@mui/icons-material/Add";
 import Swal from "sweetalert2";
 import AddTaskModal from './modal';
 import moment from 'moment';
+import withAuth from "layouts/controlLog";
 
 function TaskIndex() {
   const useStyles = makeStyles((theme) => ({
@@ -449,4 +450,4 @@ function TaskIndex() {
   );
 }
 
-export default TaskIndex;
+export default withAuth(TaskIndex);
